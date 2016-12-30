@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="#F2F2F2" />
+
+            <TextView
+                    android:id="@+id/statements"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:layout_weight="0.2"
+                    android:background="@color/white"
+                    android:text="Purchase 2 or more products to get FLAT 10% discount using the code "
+                    android:textColor="#29303E" />
+
+            <TextView
+                    android:id="@+id/example"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="7dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="10dip"
+                    android:layout_weight="0.2"
+                    android:background="@color/white"
+                    android:text="FLAT10 "
+                    android:textColor="#FF6767"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="#F2F2F2" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/couponCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COUPON CODE "
+                    android:textColor="#FF6767"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dip"/>
+
+                <EditText
+                    android:id="@+id/couponcodeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="75dip"
+                    android:hint="Enter Coupon Code"
+                    android:singleLine="true"
+                    android:textColor="#BEBFC3"
+                    android:textColorHint="#BEBFC3"
+                    android:textColorLink="#BEBFC3"
+                    android:textSize="13sp"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/applycoupon"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:background="@drawable/arrow1"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:background="#F2F2F2" />
+
+            <TextView
+                android:id='@+id/cartdetails'
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="CART DETAILS "
+                android:paddingLeft="10dip"
+                android:paddingBottom="5dip"
+                android:background="#F2F2F2"
+                android:textColor="#000000"/>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/cart_tot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dip">
+
+                    <TextView
+                        android:id="@+id/totalcart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cart Total "
+                        android:textColor="#BEBFC3"
+                        android:layout_marginLeft="20dip"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:id="@+id/totalcart_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 9999 "
+                        android:textColor="#BEBFC3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="165dip"
+                        android:layout_marginRight="5dip"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cart_disc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/cart_tot"
+                    android:layout_marginTop="5dip">
+
+                    <TextView
+                        android:id="@+id/discount_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cart Discount "
+                        android:textColor="#BEBFC3"
+                        android:layout_marginLeft="20dip"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:id="@+id/discount_cart_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- Rs. 0 "
+                        android:textColor="#FF6767"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="140dip"
+                        android:layout_marginRight="5dip"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cart_payable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/cart_disc"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dip" >
+
+                    <TextView
+                        android:id="@+id/payable_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Payable"
+                        android:textColor="#BEBFC3"
+                        android:layout_marginLeft="20dip"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:id="@+id/payable_cart_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 999.9 "
+                        android:textColor="#BEBFC3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="145dip"
+                        android:layout_marginRight="5dip"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:background="#F2F2F2" />
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

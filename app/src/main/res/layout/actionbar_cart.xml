@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/container_dropshadow"
+    android:gravity="center"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/customBackButton"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:padding="5dp"
+        android:src="@drawable/close"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/car_img"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/checkoutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOPPING CART"
+            android:layout_toRightOf="@id/car_img"
+            android:layout_marginLeft="5dp"
+            android:textColor="#686D78"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="0dp"
+            android:src="@drawable/spacer" />
+    </FrameLayout>
+
+</RelativeLayout>

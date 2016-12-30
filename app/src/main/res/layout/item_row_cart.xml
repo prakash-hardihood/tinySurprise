@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginBottom="5dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:background="#FFFFFF"
+    android:paddingLeft="2dip"
+    android:paddingRight="5dip"
+    android:paddingTop="5dip" >
+
+
+    <LinearLayout
+        android:id= "@+id/image_layout"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_margin="5dip"
+        android:layout_weight="0.65"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgThumbnailCart"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical|left"
+        android:contentDescription="Thumbnail"
+        android:gravity="center"
+        android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/image_layout"
+        android:layout_weight="0.35" >
+
+        <TextView
+            android:id="@+id/txtTitleCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:text="Life Size Teddy - Pink"
+            android:textColor="#BEBFC3"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/cartOptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum "
+            android:layout_marginTop="5dip"
+            android:singleLine="false"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="10dip"
+            android:textSize="9sp"
+            android:layout_below="@id/layout" >
+        </TextView>
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dip"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/qty_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:text="Qty"
+                android:textColor="#BEBFC3"/>
+
+            <Spinner
+                android:id="@+id/txtQtyCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/rectangle_5"
+                android:layout_alignLeft="@+id/qty_txt"
+                android:entries="@array/qty_val"
+                android:gravity="center_horizontal|center"
+                android:prompt="@string/quantity"
+                android:singleLine="true"
+                android:spinnerMode="dialog"
+                android:textColor="#BEBFC3" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true" >
+
+
+            <TextView
+                android:id="@+id/tCostCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/removeButton"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="2dip"
+                android:singleLine="true"
+                android:text="Price"
+                android:textColor="#29303E" />
+
+            <Button
+                android:id="@+id/removeButton"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/close"
+                android:gravity="right" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

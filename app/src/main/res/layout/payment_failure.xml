@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbfb"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dip" >
+        
+    <TextView
+        android:id="@+id/failure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="Sorry your transaction was unsuccesful. Your order details are saved and you can retry payment here"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/retry_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:text="RETRY PAYMENT"
+        android:textSize="16sp"
+        android:textColor="#746d6c"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+</LinearLayout>

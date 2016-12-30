@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/container_dropshadow"
+    android:gravity="center"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/customBackButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/back1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleActionBar"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="SENDER DETAILS"
+        android:textColor="#521d15"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="0dp"
+            android:src="@drawable/spacer" />
+    </FrameLayout>
+ 
+</RelativeLayout>

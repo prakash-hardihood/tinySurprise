@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:background="#F1EFEE"
+        android:layout_alignParentLeft="true"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+    <ImageView
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/home_option"
+        android:paddingTop="10dp" />
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/customsearchView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/shareButton"
+        android:background="#F1EFEE"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</android.support.v7.widget.Toolbar>

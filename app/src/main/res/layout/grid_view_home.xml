@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/gridViewLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#f6f6f6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/pfc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0C2B5"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="#555"
+            android:visibility="gone" />
+
+
+        <com.kratav.tinySurprise.grid.StaggeredGridView
+            android:id="@+id/homeScreenGridView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="@integer/grid_column_count"
+            android:verticalSpacing="5dp" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/actionbar_product_list"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:padding="0dp" />
+
+    <LinearLayout
+        android:id="@+id/errorLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="220dp"
+            android:orientation="horizontal"
+            android:src="@drawable/no_product_placeholder"></ImageView>
+
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="This category has no available product."
+            android:textColor="#521d15"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</FrameLayout>

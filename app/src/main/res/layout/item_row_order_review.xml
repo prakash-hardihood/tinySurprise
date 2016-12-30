@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:background="@drawable/background_layout"
+    android:paddingLeft="2dip"
+    android:paddingRight="5dip" >
+
+
+    <LinearLayout
+        android:id= "@+id/image_layout"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_margin="5dip"
+        android:layout_weight="0.65"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgThumbnailOrderReview"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical|left"
+            android:contentDescription="Thumbnail"
+            android:gravity="center"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/image_layout"
+        android:layout_weight="0.35" >
+
+        <TextView
+            android:id="@+id/txtTitleOrderReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:text="Life Size Teddy - Pink"
+            android:textColor="#29303E"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/cartOptionOrderReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#BEBFC3"
+            android:layout_marginTop="5dip"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="10dip"
+            android:textSize="9sp"
+            android:layout_below="@id/layout" >
+        </TextView>
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dip"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/qty_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:text="Qty"
+                android:textColor="#29303E"/>
+
+            <TextView
+                android:id="@+id/txtQtyCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:layout_marginLeft="30dip"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="#29303E" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true" >
+
+
+                <TextView
+                    android:id="@+id/txtShowCostOrderReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/removeButton"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="2dip"
+                    android:singleLine="true"
+                    android:text="Price"
+                    android:textColor="#29303E" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

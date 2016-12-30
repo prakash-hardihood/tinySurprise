@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+
+    <RelativeLayout
+        android:id="@+id/head1"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/backButtonCheckout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:id="@+id/checkout_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:textColor="#29303E"
+            android:layout_marginTop="10dip"
+            android:layout_centerInParent="true"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head1">
+
+        <ImageView
+            android:id="@+id/pageNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/union3"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_below="@+id/head2">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BILLING DETAILS"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#00C4CC"
+            android:layout_marginLeft="10dip"
+            android:layout_alignParentLeft="true" />
+
+        <RelativeLayout
+            android:id="@+id/head4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/title1"
+            android:layout_toLeftOf="@+id/title4"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHIPPING DETAILS"
+                android:textColor="#00C4CC"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER REVIEW"
+                android:gravity="center"
+                android:textColor="#00C4CC"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dip"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/title2" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#bebfc3"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head3"
+        android:background="#f6f6f6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/heading_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:layout_alignParentTop="true"
+        android:background="#f6f6f6" >
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER REVIEW"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#29303E"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heading_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_below="@+id/heading_1"
+            android:background="#f6f6f6" >
+
+            <TextView
+                android:id="@+id/ttlPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="TOTAL AMOUNT PAYABLE(incl of taxes) :"
+                android:layout_alignParentLeft="true"
+                android:textColor="#bebfc3"/>
+
+            <TextView
+                android:id="@+id/ttlPriceOrderReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2700 INR"
+                android:layout_marginRight="15dip"
+                android:layout_alignParentRight="true"
+                android:textColor="#29303E"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6"
+        android:layout_marginBottom="10dip"
+        android:layout_below="@+id/header1"
+        android:orientation="vertical" >
+
+
+
+        <ListView
+            android:id="@+id/orderReviewListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="65dp"
+            android:background="#f6f6f6"
+            android:layout_marginRight="20dip"
+            android:cacheColorHint="#00000000"
+            android:layout_marginLeft="20dip"
+            android:divider="@color/white"
+            android:dividerHeight="5dip"
+            android:scrollbars="none" >
+        </ListView>
+
+    </FrameLayout>
+
+
+        <Button
+            android:id="@+id/payNowButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="#00C4CC"
+            android:padding="5dp"
+            android:text="CONFIRM"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="3dip"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/items_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITEMS"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dip"
+            android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dip"
+        android:layout_marginRight="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ttlbill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Total: "
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/ttlbillTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dip"
+            android:text="Rs. 949 "
+            android:textColor="#000000"/>
+      <!--  <TextView
+            android:id="@+id/priceWithCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000" />
+        -->
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/itemincart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffff"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:listSelector="@drawable/list_selector"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cartIsEmptyTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Your Cart is EMPTY!"
+        android:textColor="#959595"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/continueShopingButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".65"
+            android:background="#29303E"
+            android:padding="5dp"
+            android:text="CONTINUE SHOPPING"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/SecureCheckOutButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".35"
+            android:background="#00C4CC"
+            android:padding="5dp"
+            android:text="SECURE CHECKOUT"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

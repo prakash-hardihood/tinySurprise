@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Dummy"
+            android:textColor="#f6f6f6"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.kratav.tinySurprise.utils.CustomScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <!--   <android.support.v4.view.ViewPager
+                  android:id="@+id/view_pagerProductDetails"
+                  android:layout_width="match_parent"
+                  android:layout_height="250dp"
+                  android:layout_margin="5dip" /> -->
+
+
+            <LinearLayout
+                android:id="@+id/imageLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"></LinearLayout>
+
+            <com.kratav.tinySurprise.utils.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                app:fillColor="#FF888888"
+                app:pageColor="#88FF0000" />
+
+            <!-- <viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" / -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pinimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="25dip"
+                        android:src="@drawable/check1" />
+
+                    <!-- Change to EditText -->
+
+                    <EditText
+                        android:id="@+id/pincodeEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@+id/checkAvailability"
+                        android:layout_toRightOf="@+id/pincode"
+                        android:ems="10"
+                        focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:hint="Pincode"
+                        android:maxLines="1"
+                        android:textColor="#7d7d7d"
+                        android:textColorHint="#7d7d7d"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/checkAvailability"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow1"
+                        android:gravity="right" />
+
+                    <TextView
+                        android:id="@+id/pincode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/pinimg"
+                        android:text="Check Availabilty"
+                        android:textColor="#551e17"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:text="You can choose your preferred date of delivery at the checkout."
+                        android:textColor="#7d7d7d"
+                        android:textStyle="italic"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dp"
+                    android:background="#f6f6f6"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/optionLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/options" />
+
+                        <TextView
+                            android:id="@+id/options"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="3dip"
+                            android:text="Available Options"
+                            android:textColor="#551e17"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:id="@+id/pDetailsOptionDividerView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="#f6f6f6"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/description" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="Quick Overview"
+                        android:textColor="#551e17"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/productContentTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum"
+                    android:textColor="#7d7d7d"
+                    android:textSize="12sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dp"
+                    android:background="#f6f6f6"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/description" />
+
+                    <TextView
+                        android:id="@+id/description1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="Description"
+                        android:textColor="#551e17"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/productContentTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:textSize="12sp"
+                    android:text="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum"
+                    android:textColor="#7d7d7d" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.kratav.tinySurprise.utils.CustomScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@color/button_green"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Rupees"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@color/button_orange"
+            android:padding="10dp"
+            android:text="ADD TO CART"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+
+    
+    <RelativeLayout
+        android:id="@+id/segment1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/background_layout" >
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dip" >
+
+
+            
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_alignParentLeft="true"
+                android:text="DATE OF DELIVERY: "
+                android:textColor="#29303E" />
+            
+            <TextView
+                    android:id="@+id/dateOfDelievery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:text=" Sat, 30 May 2015 "
+                    android:textColor="#FF6767" />
+
+
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/choose_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_below="@+id/layout1"
+            android:gravity="left"
+            android:text="Choose your delivery method :"
+            android:textColor="#29303E"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/ship_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/choose_type"
+            android:padding="10dip"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    
+
+           
+    <RelativeLayout
+        android:id="@+id/segment2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segment1"
+        android:background="@drawable/background_layout"
+        android:layout_marginTop="10dp" >
+
+
+            <TextView
+                android:id="@+id/ttlSenderDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:text="BILLING DETAILS : "
+                android:textColor="#29303E" />
+
+
+                <TextView
+                    android:id="@+id/senderNameConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ttlSenderDetails"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="Name Of Sender"
+                    android:textColor="#29303E" />
+
+                <TextView
+                    android:id="@+id/senderAddressConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_below="@+id/senderNameConfirm"
+                    android:text="Address"
+                    android:textColor="#29303E" />
+
+
+                <TextView
+                    android:id="@+id/senderCityConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_below="@+id/senderAddressConfirm"
+                    android:paddingTop="2dip"
+                    android:text="City"
+                    android:textColor="#29303E" />
+
+                <TextView
+                    android:id="@+id/senderZipConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_below="@+id/senderCityConfirm"
+                    android:text="Zipcode"
+                    android:textColor="#29303E" />
+
+                <TextView
+                    android:id="@+id/senderPhoneConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="15dip"
+                    android:layout_below="@+id/senderZipConfirm"
+                    android:text="Phone"
+                    android:textColor="#29303E" />
+
+
+        
+        </RelativeLayout>
+        
+            
+
+        <RelativeLayout
+            android:id="@+id/segment3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/segment2"
+            android:background="@drawable/background_layout"
+            android:layout_marginTop="10dp" >
+
+        
+
+        <TextView
+            android:id="@+id/ttlReciverDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHIPPING DETAILS: "
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:textColor="#29303E" />
+
+
+                     
+                <TextView
+                    android:id="@+id/RName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ttlReciverDetails"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:text="Name of Receiver"
+                    android:textColor="#29303E" />
+                
+                <TextView
+                    android:id="@+id/rAddress1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RName1"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:text="Address"
+                    android:textColor="#29303E" />
+                
+                <TextView
+                    android:id="@+id/RCity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rAddress1"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:text="City"
+                    android:textColor="#29303E" />
+
+                <TextView
+                    android:id="@+id/rZipCodeCheckout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RCity1"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:text="Pincode"
+                    android:textColor="#29303E" />
+                
+                <TextView
+                    android:id="@+id/rPhoneNoCheckout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rZipCodeCheckout1"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="15dip"
+                    android:text="Phone No"
+                    android:textColor="#29303E" />
+            
+
+
+    </RelativeLayout>
+        
+                
+
+    <RelativeLayout
+        android:id="@+id/segment4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_layout"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true" >
+
+
+       
+        <TextView
+            android:id="@+id/cardtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="7dip"
+            android:text="MSG ON CARD: "
+            android:textColor="#29303E" />
+
+
+
+            <TextView
+                android:id="@+id/senderMessgeConfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardtext"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:text="Hello Boss, how are you?"
+                android:textColor="#29303E" />
+
+    
+    </RelativeLayout>
+
+</LinearLayout>

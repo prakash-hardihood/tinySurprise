@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">tinySurprise</string>
+    <string name="applicationId">1472842252994119</string>
+    <string name="gcm_defaultSenderId1">782080338209</string>
+    <string name="whome_do_you_wanna_gift">WHOM DO YOU WANNA GIFT?</string>
+    <string name="sender_details" tools:ignore="MissingTranslation">SENDER DETAILS</string>
+    <string name="reciever_details" tools:ignore="MissingTranslation">RECEIVER DETAILS</string>
+    <string name="i_have_recipent_address">I HAVE RECIPIENT\nADDRESS</string>
+    <string name="name_label">Name</string>
+    <string name="messageOnCard">Message on card</string>
+    <string name="country">Country</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="city_country" tools:ignore="MissingTranslation">City</string>
+    <string name="address_label">Address</string>
+    <string name="confirm" tools:ignore="MissingTranslation">Confirm</string>
+    <string name="next" tools:ignore="MissingTranslation">Next</string>
+    <string name="logoContent">Building worlds largest bakery</string>
+    <string name="to">To:</string>
+    <string name="orderNow">Order Now and Pay Latter</string>
+    <string name="orderProcess">Your order will be processed after payment</string>
+    <string name="payNow">Pay Now</string>
+    <string name="alternativePayOption">Alternatively you can also</string>
+    <string name="goodbyeDemo">Thanks Vijay, We have sent a payment link to your email xyz@gmail.com </string>
+    <string name="validationLink">* This link is valid for 6 hours.</string>
+    <string name="checkOut">CHECKOUT</string>
+    <string name="noAddressSpeach">Our local baker will contact the recipient and get his/her complete address.</string>
+    <string name="noAddressSpeachNextLine">The surprise will be kept intact</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="details">Details</string>
+    <string name="product">Product</string>
+    <string name="occasion">OCCASION</string>
+    <string name="relation">RELATION</string>
+    <string name="shortby">SORT BY</string>
+    <string name="deliveryTime">DELIVERY DATE</string>
+    <string name="price">  PRICE</string>
+    <string name="rating">RATING</string>
+    <string name="relevance">RELEVANCE</string>
+    <string name="done">DONE</string>
+    <string name="chooseProductCategory">CHOOSE PRODUCT CATEGORY</string>
+    <string name="advanceFilterForGifting">ADVANCE FILTER FOR GIFTING</string>
+    <string name="cupcakes"> CUPCAKES</string>
+    <string name="cakes"> CAKES</string>
+    <string name="chocolates"> CHOCOLATES</string>
+    <string name="macaroons"> MACAROONS</string>
+    <string name="doughnuts"> DOUGHNUTS</string>
+    <string name="cookies"> COOKIES</string>
+    <string name="highTea">HIGH TEA</string>
+    <string name="clearAll">CLEAR ALL</string>
+    <string name="search">Search</string>
+    <string name="cities">CITIES</string>
+    <string name="shoppingCart">SHOPPING CART</string>
+    <string name="deliveryCity">DELIVERY CITY</string>
+    <string name="categories">Categories</string>
+    <string name="checkOutAllHerProducts">Check out all her products >></string>
+    <string name="cartIsEmpty">Cart is empty!!</string>
+    <string name="phoneNo">Phone</string>
+    <string name="ImgDesc">Image Desciption</string>
+    <string name="rs">`</string>
+    <string name="quantity">Select quantity</string>
+    <string name="fb">Login with &lt;u>Facebook/Guest Checkout&lt;/u>.</string>
+    <string name="login">If you are a registered customer &lt;u>login here&lt;/u>.</string>
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">MMMM yyyy</string>
+    <string name="whatsapp">Whatsapp us at 91-9840453124</string>
+    <string name="emailUs">Email us at anjali@tinysurprise.com</string>
+    <string name="callUs">Call us at 91 &#8211;9940180288(Mon-Fri,9AM &#8211;5PM)</string>
+    <string name="contactUs">Contact us</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="default_progressbar">Default Progressbar:</string>
+    <string name="payment_paypal">Paypal/Credit card\n(Cards issued outside India)</string>
+    <string name="payment_ccavenue">Credit card/ Debit card/ Internet banking\n(via ccavenue)</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="qty_val">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="nav_drawer_labels">
+        <item>BY RELATIONSHIP</item>
+        <item>BY OCCASION</item>
+    </string-array>
+
+    <string-array name="rel_array">
+        <item>BOYFRIEND</item>
+        <item>GIRLFRIEND</item>
+        <item>HUSBAND</item>
+        <item>WIFE</item>
+        <item>DAD</item>
+        <item>MOM</item>
+        <item>BROTHER</item>
+        <item>SISTER</item>
+        <item>KIDS</item>
+        <item>COUPLES</item>
+        <item>BOSS</item>
+        <item>FRIEND</item>
+    </string-array>
+
+    <string-array name="occ_array">
+        <item>BIRTHDAY</item>
+        <item>ANNIVERSARY</item>
+        <item>WEDDING</item>
+        <item>CONGRATULATE</item>
+        <item>BABY SHOWER</item>
+        <item>HOUSE WARMING</item>
+        <item>I LOVE YOU</item>
+        <item>I MISS YOU</item>
+        <item>I AM SORRY</item>
+    </string-array>
+
+</resources>

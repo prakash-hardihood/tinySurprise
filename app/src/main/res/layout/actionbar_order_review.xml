@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/container_dropshadow"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/orderReviewBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="ORDER REVIEW"
+        android:textColor="#5F2623"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingRight="10dip" >
+        
+        <TextView
+            android:id="@+id/tot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL:"
+            android:textSize="12sp"
+            android:textColor="#5F2623" />
+        
+        <TextView
+            android:id="@+id/val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1786 RS"
+            android:textSize="12sp"
+            android:textColor="#5F2623"  />
+        
+        </LinearLayout>
+        
+</RelativeLayout>

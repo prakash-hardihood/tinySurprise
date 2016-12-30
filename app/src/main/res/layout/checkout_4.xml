@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <RelativeLayout
+        android:id="@+id/head1"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/backButtonCheckout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:id="@+id/checkout_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:textColor="#29303E"
+            android:layout_marginTop="10dip"
+            android:layout_centerInParent="true"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/head1">
+
+        <ImageView
+            android:id="@+id/pageNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/union4"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:background="@color/white"
+        android:layout_below="@+id/head2">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BILLING DETAILS"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#00C4CC"
+            android:layout_marginLeft="10dip"
+            android:layout_alignParentLeft="true" />
+
+        <RelativeLayout
+            android:id="@+id/head4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/title1"
+            android:layout_toLeftOf="@+id/title4"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHIPPING DETAILS"
+                android:textColor="#00C4CC"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER REVIEW"
+                android:gravity="center"
+                android:textColor="#00C4CC"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dip"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/title2" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#00C4CC"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/heading_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:layout_below="@+id/head3"
+        android:paddingBottom="10dip" >
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dip"
+            android:textColor="#29303E"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE YOUR PAYMENT METHOD: "
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="20dip"
+            android:layout_below="@+id/heading1"
+            android:gravity="center"
+            android:textColor="#BEBFC3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_1"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true">
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/option_ccavenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dip" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dip"
+                android:layout_alignLeft="@+id/radio0"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/background_layout">
+
+
+
+                <ImageView
+                    android:id="@+id/ccavenue_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dip"
+                    android:src="@drawable/ccavenue_logo" />
+
+                <TextView
+                    android:id="@+id/ccavenue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ccavenue_logo"
+                    android:layout_marginLeft="20dip"
+                    android:textColor="#29303E"
+                    android:textSize="11sp"
+                    android:text="Credit card/ Debit card/ Internet banking"/>
+
+                <ImageView
+                    android:id="@+id/ccavenue_visa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ccavenue_text"
+                    android:layout_marginBottom="10dip"
+                    android:src="@drawable/ccavenue_visa" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/option_paypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dip" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dip"
+                android:layout_alignLeft="@+id/radio1"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/background_layout">
+
+
+
+                <ImageView
+                    android:id="@+id/paypal_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dip"
+                    android:src="@drawable/paypal_logo" />
+
+                <TextView
+                    android:id="@+id/paypal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/paypal_logo"
+                    android:textColor="#29303E"
+                    android:layout_marginLeft="20dip"
+                    android:textSize="11sp"
+                    android:text="PayPal/ Credit card"/>
+
+                <ImageView
+                    android:id="@+id/paypal_visa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/paypal_text"
+                    android:layout_marginBottom="10dip"
+                    android:src="@drawable/paypal_visa" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RadioGroup>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/payNowButton1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#00C4CC"
+        android:padding="5dp"
+        android:text="PAY NOW"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

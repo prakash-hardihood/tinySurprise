@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/container_dropshadow"
+    android:gravity="center"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/listViewFooterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/progressImageView"
+        android:gravity="center"
+        android:text="Load more article"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/progressImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/ImgDesc"
+        android:visibility="gone" />
+
+</RelativeLayout>
